@@ -24,11 +24,12 @@
         }
 
         /* Encabezado con imagen de fondo y título */
-         header {
-            background-image: url('foto1.jpg');
+        header {
+            background-image: url('Foto1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-color: #006400; /* Verde oscuro como respaldo si no carga la imagen */
             height: 100vh; /* Ocupa toda la altura de la ventana */
             width: 100%; /* Asegura que ocupe toda la anchura de la ventana */
             display: flex;
@@ -38,12 +39,11 @@
             color: white;
         }
 
-
         header h1 {
             font-family: 'Bebas Neue', sans-serif; /* Fuente Bebas Neue para el título */
             font-size: 10em; /* Aumenta el tamaño del título */
             margin: 0;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para destacar el texto */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
         }
 
         /* Galería de imágenes */
@@ -113,7 +113,7 @@
             text-align: center;
             color: white;
             width: 100%; /* Asegura que la sección de eventos ocupe toda la anchura */
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para destacar el texto */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
         }
 
         .events h2 {
@@ -131,7 +131,7 @@
 
         /* Pie de página */
         footer {
-            background-color: #2E8B57; /* Verde bosque */
+            background-color: #006400; /* Verde oscuro */
             padding: 20px;
             text-align: center;
             color: white;
@@ -146,9 +146,6 @@
     </header>
 
     <section class="gallery">
-        <img src="foto1.jpg" alt="Camping">
-        <img src="foto2.jpg" alt="Camping">
-        <img src="foto3.jpg" alt="Camping">
         <img src="foto4.jpg" alt="Camping">
         <img src="foto5.jpg" alt="Camping">
         <img src="foto6.jpg" alt="Camping">
