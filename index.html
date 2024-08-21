@@ -8,30 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
 
     <style>
-        /* Asegúrate de que no haya márgenes ni padding en el html y body */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            width: 100%; /* Asegura que ocupe toda la anchura de la pantalla */
+            width: 100%;
         }
 
         body {
-            font-family: 'Georgia', serif; /* Fuente general */
+            font-family: 'Georgia', serif;
             color: white;
-            background-color: #488B49; /* Fondo general: Verde bosque */
-            overflow-x: hidden; /* Elimina cualquier scroll horizontal */
+            background-color: #488B49;
+            overflow-x: hidden;
         }
 
-        /* Encabezado con imagen de fondo y título */
         header {
             background-image: url('Foto1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: #6EB257; /* Verde oscuro como respaldo si no carga la imagen */
-            height: 100vh; /* Ocupa toda la altura de la ventana */
-            width: 100%; /* Asegura que ocupe toda la anchura de la ventana */
+            background-color: #6EB257;
+            height: 100vh;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,62 +38,64 @@
         }
 
         header h1 {
-            font-family: 'Bebas Neue', sans-serif; /* Fuente Bebas Neue para el título */
-            font-size: 10em; /* Aumenta el tamaño del título */
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 10em;
             margin: 0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        /* Galería de imágenes */
         .gallery {
             display: flex;
             flex-wrap: wrap;
-             background-color: #C5E063;
-             position: relative;
-            width: 100%; /* Asegura que la galería ocupe toda la anchura */
-        }
-            
-        .gallery img {
-            flex-grow: 1;
-            height: auto;
-            border-radius: 0; /* Esquinas cuadradas */
-            display: block; /* Asegura que las imágenes se comporten como bloques */
-            object-fit: cover; /* Las imágenes llenan el espacio disponible */
+            background-color: #C5E063;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Frase inspiradora */
+        .gallery img {
+            flex-basis: 0;
+            flex-grow: 1;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px; /* Ajusta esto según el tamaño deseado */
+            object-fit: cover;
+            border-radius: 0;
+            display: block;
+        }
+
         .inspiration {
-            background-color: #4AAD52; /* Verde mar medio */
+            background-color: #4AAD52;
             padding: 50px 20px;
             text-align: center;
-            font-family: 'Bebas Neue', sans-serif; /* Fuente Bebas Neue para el título */
-            font-size: 3em; /* Tamaño de fuente ajustado para mejor legibilidad */
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3em;
             font-style: italic;
         }
 
-        /* Sección "Quiénes Somos" */
         .about {
-            background-color: #507255; /* Verde bosque */
+            background-color: #507255;
             padding: 50px 20px;
             text-align: center;
             color: white;
-            width: 100%; /* Asegura que la sección ocupe toda la anchura */
+            width: 100%;
         }
 
         .about h2 {
-            font-family: 'Bebas Neue', sans-serif; /* Fuente Bebas Neue para el título */
+            font-family: 'Bebas Neue', sans-serif;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
         .about p {
-            font-family: 'Georgia', serif; /* Fuente general */
+            font-family: 'Georgia', serif;
             font-size: 1.2em;
             max-width: 800px;
             margin: auto;
         }
 
-        /* Sección de eventos */
         .events {
             background-image: url('Foto9.jpg');
             background-size: cover;
@@ -105,31 +105,30 @@
             padding: 50px 20px;
             text-align: center;
             color: white;
-            width: 100%; /* Asegura que la sección de eventos ocupe toda la anchura */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
+            width: 100%;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         .events h2 {
-            font-family: 'Bebas Neue', sans-serif; /* Fuente Bebas Neue para el título */
+            font-family: 'Bebas Neue', sans-serif;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
         .events p {
-            font-family: 'Georgia', serif; /* Fuente general */
+            font-family: 'Georgia', serif;
             font-size: 1.2em;
             max-width: 800px;
             margin: auto;
         }
 
-        /* Pie de página */
         footer {
-            background-color: #006400; /* Verde oscuro */
+            background-color: #006400;
             padding: 20px;
             text-align: center;
             color: white;
             font-size: 0.9em;
-            width: 100%; /* Asegura que el pie de página ocupe toda la anchura */
+            width: 100%;
         }
     </style>
 </head>
