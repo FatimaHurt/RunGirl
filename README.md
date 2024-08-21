@@ -10,13 +10,15 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%; /* Asegura que ocupe toda la altura de la pantalla */
+            height: 100%;
+            width: 100%; /* Asegura que ocupe toda la anchura de la pantalla */
         }
 
         body {
             font-family: 'Anton', sans-serif; /* Fuente divertida */
             color: white;
             background-color: #FF89BB; /* Fondo general */
+            overflow-x: hidden; /* Elimina cualquier scroll horizontal */
         }
 
         /* Encabezado con imagen de fondo y título */
@@ -26,12 +28,11 @@
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh; /* Ocupa toda la altura de la ventana */
-            width: 100vw; /* Ocupa toda la anchura de la ventana */
+            width: 100%; /* Asegura que ocupe toda la anchura de la ventana */
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
             color: white;
         }
 
@@ -80,6 +81,7 @@
             padding: 50px 20px;
             text-align: center;
             color: white;
+            width: 100%; /* Asegura que la sección ocupe toda la anchura */
         }
 
         .about h2 {
