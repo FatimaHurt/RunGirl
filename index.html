@@ -45,12 +45,11 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
-       .gallery {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el tamaño mínimo para las columnas */
-            grid-auto-rows: 10px; /* Establece la altura base de las filas */
-            gap: 2px; /* Espacio entre imágenes */
-            padding: 2px;
+            gap: 10px; /* Espacio entre imágenes */
+            padding: 10px;
             background-color: #C5E063;
         }
 
@@ -61,25 +60,6 @@
             border-radius: 0px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una ligera sombra */
         }
-
-        /* Estilos específicos para que algunas imágenes sean más grandes, imitando un layout "masonry" */
-        .gallery img:nth-child(2n) {
-            grid-row-end: span 2; /* Ocupa dos filas para cada segunda imagen */
-        }
-
-        .gallery img:nth-child(3n) {
-            grid-column-end: span 2; /* Ocupa dos columnas para cada tercera imagen */
-        }
-
-        /* Ajuste de las imágenes más grandes */
-        .gallery img:nth-child(6n) {
-            grid-row-end: span 3; /* Ocupa tres filas para cada sexta imagen */
-        }
-
-        .gallery img:nth-child(7n) {
-            grid-column-end: span 3; /* Ocupa tres columnas para cada séptima imagen */
-        }
-
 
         .inspiration {
             background-image: url('Foto1.jpg');
@@ -164,7 +144,7 @@
        <h1>MexAdventurers</h1>
     </header>
 
-  <section class="about">
+    <section class="about">
         <h2>Quiénes Somos</h2>
         <p>Somos "MexAdventurers", una agencia dedicada a conectar a las personas con la naturaleza a través de experiencias únicas de acampada en los paisajes más hermosos de México. Únete a nosotros y vive la aventura de tu vida.</p>
     </section>
@@ -178,7 +158,7 @@
         <p>Únete a nuestras próximas expediciones y descubre los mejores destinos para acampar en México. Ya seas un principiante o un aventurero experimentado, tenemos algo especial para ti.</p>
     </section>
     
-<section class="gallery">
+    <section class="gallery">
         <img src="Foto2.jpg" alt="Camping">
         <img src="Foto3.jpg" alt="Camping">
         <img src="Foto4.jpg" alt="Camping">
