@@ -111,7 +111,7 @@
     </header>
 
     <section class="gallery">
-        <img src="imagen1.jpg" alt="Correr en la naturaleza">
+        <img src="imagen1.jpg" alt="Follow your dreams">
         <img src="imagen2.jpg" alt="Correr en la ciudad">
         <img src="imagen3.jpg" alt="Correr en la playa">
         <!-- Agrega más imágenes según sea necesario -->
