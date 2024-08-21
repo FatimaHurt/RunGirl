@@ -15,7 +15,7 @@
 
         /* Encabezado con imagen de fondo y título */
         header {
-            background-image: url('imagen1.jpg');
+            background-image: url('imagen1.jpg'); /* Asegúrate de que la imagen esté en el mismo directorio */
             background-size: cover;
             background-position: center;
             height: 100vh; /* Ocupa toda la altura de la ventana */
@@ -28,7 +28,7 @@
         }
 
         header h1 {
-            font-size: 5em;
+            font-size: 7em; /* Aumenta el tamaño del título */
             margin: 0;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para destacar el texto */
         }
