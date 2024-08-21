@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +8,14 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Anton'; /* Fuente divertida */
+            font-family: 'Anton', sans-serif; /* Fuente divertida */
             color: white;
             background-color: #FF89BB; /* Fondo general */
         }
 
         /* Encabezado con imagen de fondo y título */
         header {
-            background-image: url(![imagen1](https://github.com/user-attachments/assets/75ca29e8-c11b-4ff5-834d-7241c36efe57)); /* Asegúrate de que la imagen esté en el mismo directorio */
+            background-image: url('https://github.com/user-attachments/assets/75ca29e8-c11b-4ff5-834d-7241c36efe57'); /* URL correcta de la imagen */
             background-size: cover;
             background-position: center;
             height: 100vh; /* Ocupa toda la altura de la ventana */
@@ -85,8 +86,7 @@
 
         /* Sección de eventos */
         .events {
-            background-image: url(![imagen1](https://github.com/user-attachments/assets/2b90fe2b-7a11-407a-a6d9-63379f8e078e)
-); /* Imagen de fondo */
+            background-image: url('https://github.com/user-attachments/assets/2b90fe2b-7a11-407a-a6d9-63379f8e078e'); /* URL correcta de la imagen */
             background-size: cover;
             background-attachment: fixed;
             padding: 50px 20px;
@@ -116,6 +116,10 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>RunGirl</h1> <!-- Único título -->
+    </header>
+
     <section class="gallery">
         <img src="imagen1.jpg" alt="Correr en la naturaleza">
         <img src="imagen2.jpg" alt="Correr en la ciudad">
