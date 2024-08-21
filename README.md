@@ -1,13 +1,13 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RunGirl</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Anton+SC, sans-serif;
             color: white;
             background-color: #FF89BB; /* Fondo general */
         }
@@ -34,12 +34,12 @@
         }
 
         .gallery img {
-            margin: 10px;
+            margin: 0px;
             width: 400px;  /* Ancho más grande */
             height: 300px; /* Alto más grande */
             object-fit: cover;
             border-radius: 10px;
-            transform: rotate(-3deg);
+        
         }
 
         .gallery img:hover {
@@ -123,7 +123,7 @@
 
     <section class="about">
         <h2>Quién Soy</h2>
-        <p>¡Hola! Soy Fátima, fundadora de "RunGirl". Desde pequeña, he encontrado en el running una forma de expresar mi pasión, mi libertad, y mi determinación. Este espacio es para todas las niñas y mujeres que buscan inspirarse, superarse y conectar con el poder del running.</p>
+        <p>¡Hola! Soy Fátima, fundadora de "RunGirl". He encontrado en el running una forma de expresar mi pasión, mi libertad, y mi determinación. Este espacio es para todas las niñas y mujeres que buscan inspirarse, superarse y conectar con el poder del running.</p>
     </section>
 
     <section class="events">
@@ -132,7 +132,7 @@
     </section>
 
     <footer>
-        © 2024 RunGirl. Todos los derechos reservados. | Síguenos en Instagram, Facebook, Twitter
+        © 2024 RunGirl. Todos los derechos reservados. 
     </footer>
 </body>
 </html>
