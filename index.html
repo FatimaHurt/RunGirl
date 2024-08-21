@@ -44,25 +44,19 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mínimo 200px, ajusta según la pantalla */
+            grid-gap: 0px; /* Espacio entre imágenes */
+            padding: 0px;
             background-color: #C5E063;
-            position: relative;
-            width: 100%;
-            margin: 0;
-            padding: 0;
         }
 
         .gallery img {
-            flex-basis: 0;
-            flex-grow: 1;
-            margin: 0;
-            padding: 0;
             width: 100%;
-            height: 300px; /* Ajusta esto según el tamaño deseado */
-            object-fit: cover;
-            border-radius: 0;
+            height: auto;
+            border-radius: 0; /* Esquinas cuadradas */
+            object-fit: cover; /* Las imágenes llenan el espacio disponible sin deformarse */
             display: block;
         }
 
