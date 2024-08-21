@@ -3,11 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RunGirl</title>
-<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <!-- Corrección del enlace a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Anton+SC, sans-serif;
+            font-family: 'Anton', sans-serif; /* Corrección en el uso de la fuente */
             color: white;
             background-color: #FF89BB; /* Fondo general */
         }
@@ -39,7 +40,6 @@
             height: 300px; /* Alto más grande */
             object-fit: cover;
             border-radius: 10px;
-        
         }
 
         .gallery img:hover {
