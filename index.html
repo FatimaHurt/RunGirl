@@ -48,26 +48,19 @@
 
         /* Galería de imágenes */
         .gallery {
-            background-color: #C5E063; /* Azul acero */
-            padding: 50px 0;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            overflow: hidden;
-            position: relative;
+             background-color: #C5E063;
+             position: relative;
             width: 100%; /* Asegura que la galería ocupe toda la anchura */
         }
-
+            
         .gallery img {
-            margin: 10px; /* Añade un poco de espacio entre las imágenes */
-            max-width: 100%;  
-            max-height: 300px; 
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .gallery img:hover {
-            transform: rotate(3deg);
+            flex-grow: 1;
+            height: auto;
+            border-radius: 0; /* Esquinas cuadradas */
+            display: block; /* Asegura que las imágenes se comporten como bloques */
+            object-fit: cover; /* Las imágenes llenan el espacio disponible */
         }
 
         /* Frase inspiradora */
