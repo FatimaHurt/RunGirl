@@ -1,26 +1,36 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RunGirl</title>
-    <!-- Corrección del enlace a Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Anton', sans-serif; /* Corrección en el uso de la fuente */
+            font-family: 'Anton', sans-serif; /* Fuente divertida */
             color: white;
             background-color: #FF89BB; /* Fondo general */
         }
 
-        /* Encabezado con título */
+        /* Encabezado con imagen de fondo y título */
         header {
-            background-color: #C48BFF; /* Lila */
-            color: white;
-            padding: 50px 0;
+            background-image: 'imagen1.jpg';
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            font-size: 3em;
-            font-weight: bold;
+            position: relative;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para destacar el texto */
         }
 
         /* Galería de imágenes */
@@ -107,11 +117,11 @@
 </head>
 <body>
     <header>
-        RunGirl
+        <h1>RunGirl</h1> <!-- Único título -->
     </header>
 
     <section class="gallery">
-        <img src="imagen1.jpg" alt="Follow your dreams">
+        <img src="imagen1.jpg" alt="Correr en la naturaleza">
         <img src="imagen2.jpg" alt="Correr en la ciudad">
         <img src="imagen3.jpg" alt="Correr en la playa">
         <!-- Agrega más imágenes según sea necesario -->
