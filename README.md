@@ -6,8 +6,14 @@
     <title>RunGirl</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* Asegúrate de que no haya márgenes ni padding en el html y body */
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%; /* Asegura que ocupe toda la altura de la pantalla */
+        }
+
+        body {
             font-family: 'Anton', sans-serif; /* Fuente divertida */
             color: white;
             background-color: #FF89BB; /* Fondo general */
@@ -15,10 +21,12 @@
 
         /* Encabezado con imagen de fondo y título */
         header {
-            background-image: url('https://github.com/user-attachments/assets/75ca29e8-c11b-4ff5-834d-7241c36efe57'); /* URL correcta de la imagen */
+            background-image: url('https://github.com/user-attachments/assets/75ca29e8-c11b-4ff5-834d-7241c36efe57'); /* URL de la imagen */
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             height: 100vh; /* Ocupa toda la altura de la ventana */
+            width: 100vw; /* Ocupa toda la anchura de la ventana */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,6 +50,7 @@
             flex-wrap: wrap;
             overflow: hidden;
             position: relative;
+            width: 100%; /* Asegura que la galería ocupe toda la anchura */
         }
 
         .gallery img {
@@ -86,12 +95,15 @@
 
         /* Sección de eventos */
         .events {
-            background-image: url('https://github.com/user-attachments/assets/2b90fe2b-7a11-407a-a6d9-63379f8e078e'); /* URL correcta de la imagen */
+            background-image: url('https://github.com/user-attachments/assets/2b90fe2b-7a11-407a-a6d9-63379f8e078e'); /* Imagen de fondo */
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
             padding: 50px 20px;
             text-align: center;
             color: white;
+            width: 100%; /* Asegura que la sección de eventos ocupe toda la anchura */
         }
 
         .events h2 {
@@ -112,6 +124,7 @@
             text-align: center;
             color: white;
             font-size: 0.9em;
+            width: 100%; /* Asegura que el pie de página ocupe toda la anchura */
         }
     </style>
 </head>
