@@ -1,154 +1,139 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunGirl</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #FF89BB; /* Fondo general */
+        }
+
+        /* Encabezado con título */
+        header {
+            background-color: #C48BFF; /* Lila */
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        /* Galería de imágenes */
+        .gallery {
+            background-color: #FF94DF; /* Rosa claro */
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery img {
+            margin: 10px;
+            width: 400px;  /* Ancho más grande */
+            height: 300px; /* Alto más grande */
+            object-fit: cover;
+            border-radius: 10px;
+            transform: rotate(-3deg);
+        }
+
+        .gallery img:hover {
+            transform: rotate(3deg);
+        }
+
+        /* Frase inspiradora */
+        .inspiration {
+            background-color: #FF69B4; /* Rosa vivo */
+            padding: 50px 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-style: italic;
+        }
+
+        /* Sección "Quién Soy" */
+        .about {
+            background-color: #FF5A7F; /* Rosa intenso */
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Sección de eventos */
+        .events {
+            background-image: url('evento_fondo.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .events h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .events p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #FF7070; /* Rosa coral */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;RunGirl&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FF89BB; /* Fondo general */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Encabezado con título */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #C48BFF; /* Lila */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Galería de imágenes */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FF94DF; /* Rosa claro */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 400px;<span class="Apple-converted-space">  </span>/* Ancho más grande */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 300px; /* Alto más grande */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: rotate(-3deg);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery img:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: rotate(3deg);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Frase inspiradora */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.inspiration {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FF69B4; /* Rosa vivo */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Sección "Quién Soy" */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.about {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FF5A7F; /* Rosa intenso */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.about h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.about p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Sección de eventos */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.events {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-image: url('evento_fondo.jpg'); /* Imagen de fondo */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-attachment: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 50px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.events h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.events p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Pie de página */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FF7070; /* Rosa coral */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>RunGirl</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="imagen1.jpg" alt="Correr en la naturaleza"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="imagen2.jpg" alt="Correr en la ciudad"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="imagen3.jpg" alt="Correr en la playa"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Agrega más imágenes según sea necesario --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="inspiration"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"Cada zancada es un paso más cerca de tus sueños."</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="about"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Quién Soy&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;¡Hola! Soy Fátima, fundadora de "RunGirl". Desde pequeña, he encontrado en el running una forma de expresar mi pasión, mi libertad, y mi determinación. Este espacio es para todas las niñas y mujeres que buscan inspirarse, superarse y conectar con el poder del running.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="events"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Próximos Eventos&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Únete a nosotros en nuestras próximas carreras y eventos de running en todo el país. Ya sea que estés comenzando o seas una corredora experimentada, tenemos algo para ti.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>© 2024 RunGirl. Todos los derechos reservados. | Síguenos en Instagram, Facebook, Twitter</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <header>
+        RunGirl
+    </header>
+
+    <section class="gallery">
+        <img src="imagen1.jpg" alt="Correr en la naturaleza">
+        <img src="imagen2.jpg" alt="Correr en la ciudad">
+        <img src="imagen3.jpg" alt="Correr en la playa">
+        <!-- Agrega más imágenes según sea necesario -->
+    </section>
+
+    <section class="inspiration">
+        "Cada zancada es un paso más cerca de tus sueños."
+    </section>
+
+    <section class="about">
+        <h2>Quién Soy</h2>
+        <p>¡Hola! Soy Fátima, fundadora de "RunGirl". Desde pequeña, he encontrado en el running una forma de expresar mi pasión, mi libertad, y mi determinación. Este espacio es para todas las niñas y mujeres que buscan inspirarse, superarse y conectar con el poder del running.</p>
+    </section>
+
+    <section class="events">
+        <h2>Próximos Eventos</h2>
+        <p>Únete a nosotros en nuestras próximas carreras y eventos de running en todo el país. Ya sea que estés comenzando o seas una corredora experimentada, tenemos algo para ti.</p>
+    </section>
+
+    <footer>
+        © 2024 RunGirl. Todos los derechos reservados. | Síguenos en Instagram, Facebook, Twitter
+    </footer>
 </body>
 </html>
+
