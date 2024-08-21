@@ -15,7 +15,7 @@
 
         /* Encabezado con imagen de fondo y título */
         header {
-            background-image: 'imagen1.jpg';
+            background-image: url('imagen1.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh; /* Ocupa toda la altura de la ventana */
