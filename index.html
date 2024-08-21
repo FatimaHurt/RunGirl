@@ -25,6 +25,7 @@
         header {
             background-image: url('Foto1.jpg');
             background-size: cover;
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-color: #6EB257;
@@ -61,11 +62,22 @@
         }
 
         .inspiration {
-            background-color: #4AAD52;
-            padding: 50px 20px;
+            background-image: url('Foto1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #6EB257;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
             text-align: center;
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 3em;
+            font-size: 2em;
             font-style: italic;
         }
 
@@ -125,36 +137,39 @@
             width: 100%;
         }
     </style>
+
 </head>
 <body>
     <header>
        <h1>MexAdventurers</h1>
     </header>
 
+  <section class="about">
+        <h2>Quiénes Somos</h2>
+        <p>Somos "MexAdventurers", una agencia dedicada a conectar a las personas con la naturaleza a través de experiencias únicas de acampada en los paisajes más hermosos de México. Únete a nosotros y vive la aventura de tu vida.</p>
+    </section>
+    
     <section class="gallery">
         <img src="Foto2.jpg" alt="Camping">
         <img src="Foto3.jpg" alt="Camping">
         <img src="Foto4.jpg" alt="Camping">
-        <img src="Foto5.jpg" alt="Camping">
-        <img src="Foto6.jpg" alt="Camping">
-        <img src="Foto7.jpg" alt="Camping">
-        <img src="Foto8.jpg" alt="Camping">
     </section>
 
     <section class="inspiration">
         "Desconecta del mundo, conéctate con la naturaleza. Vive la aventura, respira libertad."
     </section>
 
-    <section class="about">
-        <h2>Quiénes Somos</h2>
-        <p>Somos "MexAdventurers", una agencia dedicada a conectar a las personas con la naturaleza a través de experiencias únicas de acampada en los paisajes más hermosos de México. Únete a nosotros y vive la aventura de tu vida.</p>
-    </section>
-
     <section class="events">
         <h2>Próximos Eventos</h2>
         <p>Únete a nuestras próximas expediciones y descubre los mejores destinos para acampar en México. Ya seas un principiante o un aventurero experimentado, tenemos algo especial para ti.</p>
     </section>
-
+    
+  <section class="gallery">
+       <img src="Foto5.jpg" alt="Camping">
+        <img src="Foto6.jpg" alt="Camping">
+        <img src="Foto8.jpg" alt="Camping">
+ </section>
+    
     <footer>
         © 2024 MexAdventurers. Todos los derechos reservados. 
     </footer>
